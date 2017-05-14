@@ -1,0 +1,94 @@
+<template>
+    <div class="container">
+        <h1 class="title is-spaced">Constructor Options</h1>
+        <h2 class="subtitle">These are global default options, which are set on Buefy initialization</h2>
+
+        <hr>
+
+        <div class="example">
+            <pre v-highlight><code class="javascript">{{ usage | pre }}</code></pre>
+        </div>
+
+        <hr>
+
+        <h3 class="subtitle">Options</h3>
+        <b-table :data="options" default-sort="name">
+            <template scope="props">
+                <b-table-column field="name" label="Name"
+                    v-html="props.row.name">
+                </b-table-column>
+                <b-table-column field="description" label="Description" width="620"
+                    v-html="props.row.description">
+                </b-table-column>
+                <b-table-column field="type" label="Type"
+                    v-html="props.row.type">
+                </b-table-column>
+                <b-table-column field="values" label="Values"
+                    v-html="props.row.values">
+                </b-table-column>
+                <b-table-column field="default" label="Default"
+                    v-html="props.row.default">
+                </b-table-column>
+            </template>
+        </b-table>
+    </div>
+</template>
+
+<script>
+    export default {
+        data() {
+            return {
+                usage: `
+                Vue.use(Buefy, {
+                    defaultIconPack: 'fa',
+                    defaultContentElement: '#content',
+                    ...
+                })`,
+                options: [
+                    {
+                        name: '<code>defaultIconPack</code>',
+                        description: `Icon pack used internally and on the Icon component attribute —
+                            <a href="https://material.io/icons/" target="_blank">Material Design Icons</a> or
+                            <a href="http://fontawesome.io/" target="_blank">FontAwesome</a>`,
+                        type: 'String',
+                        values: '<code>mdi</code>, <code>fa</code>',
+                        default: '<code>mdi</code>'
+                    },
+                    {
+                        name: '<code>defaultContentElement</code>',
+                        description: `Default container attribute for floating Notices (Toasts & Snackbars). Note that this also
+                            changes the <code>position</code> of the Notices from <code>fixed</code> to <code>absolute</code>.
+                            Meaning that the container <em>should</em> be <code>fixed</code>.`,
+                        type: 'String',
+                        values: '—',
+                        default: '—'
+                    },
+                    {
+                        name: '<code>defaultTooltipType</code>',
+                        description: `Default tooltip type (color) attribute.`,
+                        type: 'String',
+                        values: `<code>is-white</code>, <code>is-black</code>, <code>is-light</code>,
+                            <code>is-dark</code>, <code>is-primary</code>, <code>is-info</code>, <code>is-success</code>,
+                            <code>is-warning</code>, <code>is-danger</code>,
+                            and any other colors you've set in the <code>$colors</code> list on Sass`,
+                        default: '<code>is-primary</code>'
+                    },
+                    {
+                        name: '<code>defaultTooltipAnimated</code>',
+                        description: `Default tooltip <code>animated</code> attribute.`,
+                        type: 'Boolean',
+                        values: '—',
+                        default: '<code>false</code>'
+                    },
+                    {
+                        name: '<code>defaultInputAutocomplete</code>',
+                        description: `Default input <code>autocomplete</code> attribute.`,
+                        type: 'String',
+                        values: '<code>on</code>, <code>off</code>',
+                        default: '<code>on</code>'
+                    }
+                ]
+            }
+        }
+    }
+</script>

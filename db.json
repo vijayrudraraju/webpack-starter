@@ -1,0 +1,99 @@
+{
+  "users": [
+    {
+      "id": 1,
+      "user_name": "vijay",
+      "password": "$2a$10$VHJM747v0Uc7/o6aCSazBuxJja8ngP3t.OWqFEws2hDPGGWaYWCue",
+      "trips": [
+        {
+          "id": 1,
+          "destination": "Paris",
+          "start_date": 1494140400000,
+          "end_date": 1494658800000,
+          "comment": "Towers"
+        },
+        {
+          "id": 2,
+          "destination": "San Francisco",
+          "start_date": 1495350000000,
+          "end_date": 1495436400000,
+          "comment": "Bridges"
+        },
+        {
+          "id": 3,
+          "destination": "Toronto",
+          "start_date": 1495350000000,
+          "end_date": 1495436400000,
+          "comment": "Hockey"
+        },
+        {
+          "id": 6,
+          "destination": "Brazil town",
+          "start_date": 1493622000000,
+          "end_date": 1494054000000,
+          "comment": "Jungle"
+        }
+      ],
+      "type": "REGULAR"
+    },
+    {
+      "id": 2,
+      "user_name": "manager",
+      "password": "$2a$10$kbKrhwEtmKKNX20aR0DIROYFRJmaXCMCBOvltYoyfR7kBxcCnCpvO",
+      "trips": [
+        {
+          "id": 5,
+          "destination": "Mansion",
+          "start_date": 1491116400000,
+          "end_date": 1493622000000,
+          "comment": "Vacation"
+        },
+        {
+          "id": 12,
+          "destination": "Brazil town",
+          "start_date": 1493622000000,
+          "end_date": 1494054000000,
+          "comment": "Jungle"
+        }
+      ],
+      "type": "MANAGER"
+    },
+    {
+      "id": 3,
+      "user_name": "admin",
+      "password": "$2a$10$q20rAAHny6TDvO7GL0O1mujkd3vOnC8crWmWkuKsx1Tf5NyfeTF7W",
+      "trips": [
+        {
+          "id": 4,
+          "destination": "Secret Island",
+          "start_date": 1494140400000,
+          "end_date": 1494572400000,
+          "comment": ""
+        },
+        {
+          "id": 15,
+          "destination": "Large Island",
+          "start_date": 1494140400000,
+          "end_date": 1494658800000,
+          "comment": ""
+        }
+      ],
+      "type": "ADMIN"
+    },
+    {
+      "id": 4,
+      "user_name": "vijay2",
+      "password": "$2a$10$w/CjnME2br4xUmZQO.Ltfeb9wIEOXd.JpHFNlFuLfUQ3SgWG2PQTy",
+      "trips": [],
+      "type": "REGULAR"
+    },
+    {
+      "id": 5,
+      "user_name": "dummy",
+      "password": "$2a$10$sIPyZ/67w7KzVGHg.MxxzO4GaPvq8JAmOQcM10bMaWcZIBw2w8LRi",
+      "trips": []
+    }
+  ],
+  "max_id": 5,
+  "max_trip_id": 15
+}

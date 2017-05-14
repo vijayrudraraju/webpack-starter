@@ -1,0 +1,13 @@
+# Travel Plans
+An app that records and prints travel plans.
+## Installation
+1. Install packages: `npm install`
+2. Run development server: `npm run start`
+3. Build for production: `npm run build`
+## Usage
+## Contributing
+1. Fork it!
+2. Create your feature branch: `git checkout -b my-new-feature`
+3. Commit your changes: `git commit -am 'Add some feature'`
+4. Push to the branch: `git push origin my-new-feature`
+5. Submit a pull request :D

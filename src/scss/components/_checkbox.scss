@@ -1,0 +1,35 @@
+.checkbox {
+    & + .checkbox {
+        margin-left: 0.5em;
+    }
+    input[type=checkbox] {
+        display: none;
+        + span {
+            padding-left: 24px;
+            text-align: left;
+            &:before {
+                content: "";
+                position: absolute;
+                left: 0;
+                top: 50%;
+                transform: translate(0, -50%);
+                width: 18px;
+                height: 18px;
+                border-radius: $radius-small;
+                border: 2px solid $grey;
+                background: none;
+                transition: background $speed-slow $easing, border-color $speed $easing;
+            }
+            &:hover:before {
+                border-color: $primary;
+            }
+        }
+        &:checked + span:before {
+            background: $primary url(checkmark($white)) no-repeat center center;
+            border-color: $primary;
+        }
+    }
+    &[disabled] {
+        opacity: 0.5;
+    }
+}
